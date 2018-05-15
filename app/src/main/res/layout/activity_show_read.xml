@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bbaytemir.ele.iot.showRead"
+    android:id="@android:id/tabhost"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="tab1">
+
+
+
+            <LinearLayout
+                android:id="@+id/HavaKalitesi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imgAir_ECO"
+                    android:layout_width="100dp"
+                    android:layout_height="100dip"
+                    android:background="@color/colorPrimaryDark"
+                    android:scaleType="fitCenter"
+                    app:riv_border_color="#303F9F"
+                    app:riv_border_width="0dip"
+                    android:layout_margin="20dp"
+                    app:riv_corner_radius="100dip"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true"
+                    app:riv_tile_mode="repeat" />
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="ECO2 : " />
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imgAir_TVOC"
+                    android:layout_width="100dp"
+                    android:layout_height="100dip"
+                    android:background="@color/colorPrimaryDark"
+                    android:scaleType="fitCenter"
+                    app:riv_border_color="#303F9F"
+                    app:riv_border_width="0dip"
+                    app:riv_corner_radius="100dip"
+                    android:layout_margin="20dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true"
+                    app:riv_tile_mode="repeat" />
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="TVOC :" />
+                <TextView
+                    android:id="@+id/txtAll"
+                    android:layout_width="match_parent"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="All Text :" />
+
+
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="Temprature :" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Renk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imgRGB"
+                    android:layout_width="300dp"
+                    android:layout_height="300dip"
+                    android:background="@color/colorPrimaryDark"
+                    android:scaleType="fitCenter"
+                    app:riv_border_color="#303F9F"
+                    app:riv_border_width="0dip"
+                    app:riv_corner_radius="100dip"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true"
+                    app:riv_tile_mode="repeat" />
+                <TextView
+                    android:id="@+id/txtRGB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:text="#303F9F" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
+

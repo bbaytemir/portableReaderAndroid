@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IoT</string>
+    <string name="text_pair">Pair</string>
+    <string name="text_bluetooth_off">Bluetooth Off</string>
+    <string name="text_enable">Enable Bluetooth</string>
+    <string name="text_view_paired">Show Paired Devices</string>
+    <string name="text_scan_devices">Scan Active Devices</string>
+    <string name="text_list_devices">Device List</string>
+    <string name="txt_connect">Connect Paired Device</string>
+</resources>
